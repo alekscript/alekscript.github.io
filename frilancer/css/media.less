@@ -1,0 +1,532 @@
+// main: main.less
+
+// FOR PC
+@media @pc {
+    .intro-img {
+        right: 0;
+        height: 770px;
+    }
+    .text {
+        font-size: 9.5rem;
+    }
+    .team__inner:after {
+        right: 0;
+    }
+    .team__inner:before {
+        left: 0;
+    }
+    .reviews {
+        &:before {
+            width: 500px;
+            height: 500px;
+        }
+    }
+}
+// For NOTEBOOK
+@media @notebook {
+    .intro {
+        min-height: 700px;
+    }
+    .intro-img {
+        height: 680px;
+    }
+    .text {
+        font-size: 8.5rem;
+    }
+    .intro-sm {
+        font-size: 7rem;
+    }
+    .intro__inner {
+        padding-top: 150px;
+    }
+    .we_are_img {
+        height: 350px;
+    }
+    .we_are__head {
+        max-width: 550px;
+    }
+    .how_works  {
+
+        &:after {
+            width: 600px;
+            height: 600px;
+            top: 75px;
+            right: -300px;
+        }
+    }
+    .works_item {
+        width: 275px;
+    }
+}
+@media (max-width: 1131px) {
+    .intro-text  {
+        width: 100%;
+    }
+    .intro-photo {
+        display: none;
+    }
+    .but {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .intro__inner {
+        padding-top: 120px;
+    }
+    .we_are__head {
+        max-width: 500px;
+    }
+    .we_are_img {
+        height: 300px;
+    }
+    .we_do-list {
+        justify-content: center;
+    }
+    .we_do-item {
+        width: 50%;
+        max-width: 400px;
+
+    }
+    .how_works {
+        
+        &:after {
+            width: 500px;
+            height: 500px;
+            top: 100px;
+            right: -300px;
+        }
+    }
+    .how_work-text {
+        max-width: 320px;
+    }
+    .works_item {
+        width: 220px;
+        height: 270px;
+    }
+    .reviews:before {
+        left: -350px;
+    }
+    .work_text {
+        font-size: 1.5rem;
+    }
+
+}
+//  FOR TABLET
+@media @tablet {
+    .header {
+        padding: 5px 15px;
+    }
+    .header.active {
+        background-color: @red;
+    }
+    .we_do {
+
+        &:before {
+            display: none;
+        }
+    }
+    .nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: @red;
+    }
+    .nav_link {
+        width: 100%;
+        border-bottom: 1px solid @black;
+        padding: 10px 10px;
+        text-align: center;
+        margin: 0;
+
+        &:first-child {
+            border-top: 1px solid @black;
+        }
+    }
+    .header_icon {
+        margin-left: 0;
+    }
+    .nav.active {
+        display: flex;
+
+        flex-direction: column;
+
+        font-size: 2rem;
+
+    }
+
+    .burger_menu {
+        display: inline-block;
+    }
+
+    .we_are {
+        overflow:visible;
+    }
+    .we_are__inner {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .we_are__head {
+        width: 100%;
+        max-width: 700px;
+        margin-bottom: 40px;
+    }
+    .we_are_photo {
+        width: 100%;
+    }
+    .we_are_img {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+    }
+    .we_are_photo:before {
+        display: none;
+    }
+    .how_works {
+        &:after {
+            display: none;
+        }
+    }
+    .how_we_work {
+        justify-content: center;
+    }
+    .how_work-header {
+        width: 100%;
+        text-align: center;
+        max-width: 700px;
+        margin-bottom: 50px;
+    }
+    .how_work-text {
+        width: 100%;
+        margin:0 auto;
+        max-width: 600px;
+        text-align: center;
+        padding-bottom: 35px;
+    }
+    .how_works:before {
+        display: none;
+    }
+    .how_works_list {
+        position: relative;
+        right: 25px;
+    }
+    .works_item {
+        width: 150px;
+        height: 200px;
+    }
+    .works_num {
+        font-size: 3rem;
+    }
+    .work-title {
+        font-size: 2.5rem;
+    }
+    .work_text {
+        font-size: 1.4rem;
+        line-height: 1.4;
+    }
+
+    .team__inner {
+        padding-top: 50px;
+
+        &:after {
+            right: 0;
+        }
+        &:before {
+            left: 0;
+        }
+    }
+    .team_item {
+  
+        &--not_main {
+            display: none;
+        }
+    }
+    .reviews {
+        padding-left: 30px;
+    }
+    .review {
+        margin-left: 0;
+        padding-left: 30px;
+    }
+    .reviews:before {
+        display: none;
+    }
+    .reviews:after {
+        display: none;
+    }
+    .review-im {
+        display: none;
+    }
+    .reviews_photo {
+        width: 160px;
+        height: 160px;
+        margin-top: 50px;
+        left: 0;
+        margin-right: 50px;
+    }
+    .reviews_text {
+        max-width: 400px;
+    }
+    .reviews__inner {
+        justify-content: center;
+    }
+    .contacts_item {
+        padding-left: 60px;
+    }
+    .contacts-img {
+        width: 50px;
+    }
+    .team-img {
+        width: 400px;
+    }
+    .reviews_header {
+        padding-left: 0;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 0;
+    }
+}
+
+@media @mobile {
+
+    .intro__inner {
+        padding-top: 70px;
+    }
+    .intro-text {
+        
+        margin: 0 auto;
+    }
+    .text {
+        font-size: 6rem;
+        max-width: 400px;
+        line-height: 1.4;
+    }
+    .intro-sm {
+        font-size: 5rem;
+        line-height: 2;
+    }
+    .title {
+        font-size: 5rem;
+        margin-bottom: 30px;
+    }
+    .we_are {
+        padding: 80px 0;
+    }
+    .we_are_text {
+        font-size: 1.6rem;
+        margin-bottom: 40px;
+    }
+    .we_do {
+        padding-top: 80px;
+    }
+    .we_do-item {
+        width: 100%;
+        margin-bottom: 40px;
+        padding-left: 100px;
+    }
+    .how_works {
+        padding: 80px 0;
+    }
+    .works_item {
+        width: 120px;
+        height: 150px;
+    }
+    .work-title {
+        font-size: 2rem;
+        padding-left: 0;
+    }
+    .work_text {
+        font-size: 1.2rem;
+        line-height: 1.3;
+        padding-left: 0;
+    }
+    .our_team {
+        padding: 80px 0;
+    }
+    .team-photo {
+        width: 250px;
+        height: 250px;
+    }
+    .team-img {
+        width: 350px;
+    }
+    .team-name {
+        font-size: 2rem;
+        left: 20px;
+    }
+    .team-prof {
+        left: 60px;
+        padding: 3px 8px;
+        width: 150px;
+    }
+    .reviews {
+        padding: 80px 0;
+    }
+    .reviews__inner {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+    }
+    .reviews_photo {
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .review {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        max-width: 550px;
+        padding-left: 0;
+    }
+    .reviews_text {
+        max-width: 100%;
+  
+    }
+    .review_people {
+        justify-content: center;
+    }
+    .footer {
+        padding-top: 80px;
+    }
+    .footer_title {
+        margin-bottom: 30px;
+    }
+    .contacts {
+        flex-direction: column;
+    }
+    .contacts_item {
+        width: 100%;
+        padding-left: 80px;
+        left: 45px;
+    }
+}
+
+
+// FOR PHONE
+@media @phone {
+    .intro {
+        min-height: 550px;
+    }
+    .text {
+        font-size: 4rem;
+    }
+    .intro-sm {
+        font-size: 4rem;
+    }
+    .but {
+        bottom: 80px;
+    }
+    .btn {
+        font-size: 1.5rem;
+    }
+    .we_are {
+        padding: 60px 0;
+    }
+    .title {
+        font-size: 4rem;
+    }
+    .we_are_text {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+    
+    .we_do {
+        padding-top: 60px;
+    }
+    .we_do-item {
+        padding-top: 0;
+    }
+    .we_de-item-title {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    .we_do-item-text {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+    .how_works {
+        padding: 60px 0;
+    }
+    .how_work-text {
+        padding-bottom: 30px;
+    }
+    .how_works_list {
+        flex-direction: column;
+        right: 0;
+    }
+    .works_item {
+        margin-bottom: 30px;
+        margin-left: 0;
+    }
+    .our_team {
+        padding: 60px 0;
+    }
+    .team__title {
+        padding-bottom: 0;
+    }
+    .team-photo {
+        width: 200px;
+        height: 200px;
+    }
+    .team-name {
+        font-size: 1.7rem;
+        width: 150px;
+    }
+    .team-prof {
+        width: 100px;
+    }
+    .slick-prev {
+            top: auto;
+            bottom: 0;
+            border-right-width: 40px;
+        }
+    .slick-next{
+            top: auto;
+            bottom: 0;
+            border-left-width: 40px;
+        }
+    .reviews {
+        padding: 60px 0;
+    }
+    .reviews_header {
+        padding-left: 0;
+        text-align: center;
+    }
+    .reviews_text {
+        font-size: 1.5rem;
+        padding-top: 10px;
+    }
+    .footer {
+        padding-top: 60px;
+    }
+    .contacts {
+        margin-bottom: 0;
+    }
+    .contacts_item {
+        padding-left: 60px;
+    }
+    .footer__social {
+        max-width: 275px;
+    }
+    .social-img {
+        width: 25px;
+        margin: 10px 20px;
+    }
+
+
+
+
+
+    .contacts_item {
+        left: 20px;
+    }
+
+    
+}
