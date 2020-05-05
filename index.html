@@ -1,337 +1,65 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
-
-	<meta charset="utf-8" />
-
-	<title>Портфолио веб-верстальщика</title>
-	<meta content="Портфолио Junior Front-End разработчика" name="description" />
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
-
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.2.min.css" />
-	<link rel="stylesheet" href="libs/animate/animate.min.css" />
-	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
-	<link rel="stylesheet" href="libs/linea/styles.css" />
-	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css" />
-	<link rel="stylesheet" href="css/media.css" />
-
+  <meta charset="UTF-8">
+  <meta name="description" content="Профессиональная верстка сайтов по PSD макетам на заказ. 
+    Верстка сайтови Landing Page (фиксированная, 
+    резиновая, адаптивная) без посадки на CMS.">
+  <meta name="keywords" content="html, адаптивная верстка, недорогая верстка, портфолио верстальщик, верстка, 
+    верстальщик, заказать верстку, верстка на заказ, верстка из PSD, верстка по PSD">
+  <meta name="author" content="Александо Пятопал">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>HTML верстальщик - верстка сайтов. Заказать верстку.</title>
 </head>
 
 <body>
-
-<header class="main_head" data-image-src="img/bg.jpg" data-parallax="scroll">
+  <!-- header section -->
+  <header class="header">
     <div class="container">
-        <div class="row">
-           <div class="col-md-12">
-            <button class="toggle_mnu">
-                <span class="sandwich">
-                    <span class="sw-topper"></span>
-                    <span class="sw-bottom"></span>
-                    <span class="sw-footer"></span>
-                </span>  
-            </button>
-            <nav class="top_mnu">
-              <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="#service">Услуги</a></li>
-                <li><a href="#portfolio">Портфолио</a></li>
-                <li><a href="#contacts">Контакты</a></li>
-              </ul>
-            </nav>
-         </div>
-        </div>
-    </div>
-    <div class="top_wrapper">  
-      <h1><span>HTML CODER</span> / HTML ВЕРСТАЛЬЩИК</h1>
-      <p><span>Александр Пятопал</span> - Junior Front-End Developer</p>
-      <a href="#contacts" class="order">Заказать верстку</a>
-    </div>
-</header>
+      <div class="header__inner">
+        <div class="logo"><span>AlekScript</span> Портфолио</div>
 
-<section id="service" class="s_resume">
- <div class="s_header">
-     <h2>Услуги</h2>
-  <div class="s_descr_wrapper">
-    <div class="s_descr">Выполняю следующие работы</div>
-  </div>
- </div>
-  <div class="s_content">
-    <div class="container">
-      <div class="row">
-         <div class="col-md-4 col-sm-6">
-           <div class="s_item">
-             <div class="s_icon">
-               <i class="fa fa-html5"></i>
-               <h3>HTML</h3>
-             </div>
-             <p>Верстка сайта используя язык разметки HTML5</p>
-           </div>
-         </div>
-         <div class="col-md-4 col-sm-6">
-           <div class="s_item">
-             <div class="s_icon">
-               <i class="fa fa-css3"></i>
-               <h3>CSS</h3>
-              </div>
-             <p>Стилизация и анимация сайта используя стили CSS3</p>
-           </div>
-         </div>
-         <div class="col-md-4 col-sm-6">
-           <div class="s_item">
-             <div class="s_icon">
-              <i class="fa fa-jsfiddle"></i>
-               <h3>JavaScript</h3>
-             </div>
-             <p>Встраивание готовых решений JS на уровне подключения и доработки</p>
-           </div>
-         </div>
-         <div class="col-md-4 col-sm-6">
-           <div class="s_item">
-             <div class="s_icon">
-              <i class="fa fa-image"></i>
-               <h3>Photoshop</h3>
-             </div>
-             <p>Нарезка и подготовка к верстке шаблона используя Photoshop</p>
-           </div>
-         </div>
-         <div class="col-md-4 col-sm-6">
-           <div class="s_item">
-             <div class="s_icon"><i class="fa fa-wordpress"></i>
-               <h3>WordPress</h3>
-             </div>
-             <p>Натяжка шаблона на CMS WordPress</p>
-           </div>
-         </div>
-         <div class="col-md-4 col-sm-6">
-           <div class="s_item">
-             <div class="s_icon"><i class="fa fa-code"></i>
-               <h3>Тест</h3>
-             </div>
-             <p>Тестирование работоспособности сайта на разных браузерах.</p>
-           </div>
-         </div>
+        <nav class="nav">
+          <a href="#intro" class="nav-link">Главная</a>
+          <a href="#about" class="nav-link">Обо мне</a>
+          <a href="#portfolio" class="nav-link">Портфолио</a>
+          <a href="#contacts" class="nav-link">Контакты</a>
+        </nav>
       </div>
     </div>
-  </div>
-</section>
-<section id="portfolio" class="s_portfolio bg_dark">
- <div class="s_header">
-     <h2>Портфолио</h2>
-    <div class="s_descr_wrapper">
-      <div class="s_descr">Мои работы</div>
-    </div>
- </div>
-  <div class="s_content">
+  </header>
+  <!-- /.header section -->
+
+  <!-- intro section  -->
+  <section class="intro">
     <div class="container">
-      <div class="row">
-       <div class="filter_div controls">
-          <ul>
-            <li class="filter active" data-filter="all">Все работы</li>
-            <li class="filter" data-filter=".category-1">Лэндинг</li>
-            <li class="filter" data-filter=".category-2">Портфолио</li>
-            <li class="filter" data-filter=".category-3">Сайты компании</li>
-          </ul>
-       </div>  
-       <div id="portfolio_grid">
-          <div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-1">
-            <img src="img/portfolio/activebox_small.jpg" alt="image">
-            <div class="port_item_cont">
-              <h3>Верстка макета ActiveBox</h3>
-              <p>Адаптивная верстка макета при помощи bootstrap3</p>
-              <a href="#work1" class="popup_content">Посмотреть</a>
-            </div>
-            <div class="hidden">
-              <div class="port_descr" id="work1">
-                <h3>Верстка bootstrap макета ActiveBox</h3>
-                <p>Адаптивная верстка макета при помощи bootstrap3. а также js скрипта слайдера owlCarousel.<br>
-				<a href="/portfolio/activebox/index.html" target="_blank">Смотреть верстку</a></p>
-				</p> 
-                <img src="img/portfolio/activbox.jpg" alt="image">
-              </div>
-            </div>
-          </div>
-		  <div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-1">
-            <img src="img/portfolio/landing_small.jpg" alt="image">
-            <div class="port_item_cont">
-              <h3>Верстка макета Portfolio</h3>
-              <p>Адаптивная верстка макета при помощи сетки bootstrap 4</p>
-              <a href="#work7" class="popup_content">Посмотреть</a>
-            </div>
-            <div class="hidden">
-              <div class="port_descr" id="work7">
-                <h3>Верстка bootstrap макета Portfolio</h3>
-                <p>Адаптивная верстка макета при помощи сетки bootstrap 4. а также использованы самописные плиточки с работами на js.<br>
-				<a href="/portfolio/landing/index.html" target="_blank">Смотреть верстку.</a></p>
-				</p> 
-                <img src="img/portfolio/landing.jpg" alt="image">
-              </div>
-            </div>
-          </div>
-          <div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-2">
-            <img src="img/portfolio/easyhtml_small.jpg" alt="image">
-            <div class="port_item_cont">
-              <h3>Портфолио верстальщика</h3>
-              <p>Верстка макета портфолио для себя.</p>
-              <a href="#work2" class="popup_content">Посмотреть</a>
-            </div>
-            <div class="hidden">
-              <div class="port_descr" id="work2">
-                <h3>Портфолио верстальщика</h3>
-               <p>Верстка макета портфолио для себя. Использованы технологии bootstrap3 и сторонние JS скрипты: owlCarousel,
-				ScrollToId для навигации, и библиотеки Animate.css. <br>
-				<a href="/portfolio/html/index.html" target="_blank">Смотреть верстку</a></p> 
-                 <img src="img/portfolio/easyhtml.jpg" alt="image">
-              </div>
-            </div>
-          </div>
-          <div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-3">
-            <img src="img/portfolio/bukovel_small.jpg" alt="Верстка макета bukovel">
-            <div class="port_item_cont">
-              <h3>Макет отдых в Буковель</h3>
-              <p>Учебная верстка макета bukovel</p>
-              <a href="#work3" class="popup_content">Посмотреть</a>
-            </div>
-            <div class="hidden">
-              <div class="port_descr" id="work3">
-                <h3>Bukovel Skipass</h3>
-                <p>Учебная верстка макета bukovel с помощью bootstrap 3.<br>
-				<a href="/portfolio/bukovel/index.html" target="_blank">Смотреть верстку</a></p> 
-                <img src="img/portfolio/bukovel.jpg" alt="Сайт отдыха в Буковели">
-              </div>
-            </div>
-          </div>
-		  <div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-3">
-            <img src="img/portfolio/jasmin_small.jpg" alt="Шаблон танцевальной студии">
-            <div class="port_item_cont">
-              <h3>Верстка макета студии Jasmin</h3>
-              <p>Верстка макета на заказ для танцевальной студии</p>
-              <a href="#work4" class="popup_content">Посмотреть</a>
-            </div>
-            <div class="hidden">
-              <div class="port_descr" id="work4">
-                <h3>Верстка макета студии Jasmin</h3>
-                <p>Верстка заказного макета для танцевальной студии. Выполнена адаптивно при использовании bootstrap,
-				а также есть анимированные части при помощи animate.css<br>
-				<a href="/portfolio/jasmin/index.html" target="_blank">Смотреть верстку</a> </p> 
-                <img src="img/portfolio/jasmin.jpg" alt="Jasmin Pole Dance">
-              </div>
-            </div>
-          </div>
-		  <div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-2">
-            <img src="img/portfolio/shakers_small.jpg" alt="Верстка макета shakers">
-            <div class="port_item_cont">
-              <h3>Верстка макета тестового задания</h3>
-              <p>Верстка макета тестового задания по ТЗ.</p>
-              <a href="#work5" class="popup_content">Посмотреть</a>
-            </div>
-            <div class="hidden">
-              <div class="port_descr" id="work5">
-                <h3>Верстка макета для тестового задания.</h3>
-                <p>Верстка макета тестового задания по ТЗ.<br>
-				<a href="/portfolio/monosnap/index.html" target="_blank">Смотреть верстку</a></p> 
-                <img src="img/portfolio/shakers.jpg" alt="Верстка макета shakers">
-              </div>
-            </div>
-          </div>
-       </div>
+      <div class="intro__inner">
+          <h1 class="intro-title">Верстка сайтов</h1>
+          <h3 class="intro-subtitle"><span>HTML Верстальщик</span> - Александр Пятопал</h3>
+
+          <button type="button" class="btn">Заказать верстку</button>
       </div>
     </div>
-  </div>
-</section>
-<section id="contacts" class="s_contacts bg_light">
- <div class="s_header">
-     <h2>Контакты</h2>
-  <div class="s_descr_wrapper">
-    <div class="s_descr">Оставить сообщение</div>
-  </div>
- </div>
-  <div class="s_content">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-sm-6">
-          <div class="contact_box">
-            <div class="contacts_icon icon-basic-geolocalize-05"></div>
-            <h3>Адрес:</h3>
-            <p>Украина, Киевская область, г. Киев</p>
-          </div>
-          <div class="contact_box">
-            <div class="contacts_icon icon-basic-smartphone"></div>
-            <h3>Скайп:</h3>
-            <p>kazuha1991</p>
-          </div>
-          <div class="contact_box">
-            <div class="contacts_icon icon-basic-mail-open-text"></div>
-            <h3>Почта:</h3>
-            <p>piatopal.alex@gmail.com</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-sm-6">
-          <form method="POST" action="https://formspree.io/kazuha1991@gmail.com" class="mail_form">
-            <label class="form_group">
-              <span class="color_element">*</span> Введите имя :
-              <input type="text" name="name" placeholder="Ваше имя" required>
-            </label>
-            <label class="form_group">
-              <span class="color_element">*</span> Введите  e-mail :
-              <input type="text" name="email" placeholder="Ваша почта" required>
-            </label>
-            <label class="form_group">
-              <span class="color_element">*</span> Введите  сообщение :
-              <textarea name="text" cols="30" rows="3" placeholder="Описание задания и ссылка на макет..."></textarea>
-            </label>
-            <button>отправить</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
+  <!-- /.intro section -->
 
-<footer class="main_footer bg_dark">
-  <div class="container">
-   <div class="row">
-     <div class="col-md-12">
-     <p>&copy; 2019 Александр Пятопал</p>
-     <div class="social_wrap">
-       <ul>
-                <li><a href="https://twitter.com/xkazuhax" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                 <li><a href="https://www.facebook.com/aleksandr.piatopal" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                 <li><a href="https://vk.com/kazuha" target="_blank"><i class="fa fa-vk"></i></a></li>
-                 <li><a href="https://github.com" target="_blank"><i class="fa fa-github"></i></a></li>
-              </ul>
-      </div>
-   </div>
-   </div>
-  </div>
-</footer>
-	<div class="hidden"></div>
+  <!-- about section  -->
+  <section class="about"></section>
+  <!-- /.about section -->
 
-	<!--[if lt IE 9]>
-	<script src="libs/html5shiv/es5-shim.min.js"></script>
-	<script src="libs/html5shiv/html5shiv.min.js"></script>
-	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
-	<script src="libs/respond/respond.min.js"></script>
-	<![endif]-->
-	
-	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
-	<script src="libs/modernizr/modernizr.js"></script>
-	<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
-	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
-	<script src="libs/waypoints/waypoints.min.js"></script>
-	<script src="libs/mixitup/mixitup.min.js"></script>
-	<script src="libs/parallax/parallax.min.js"></script>
-	<script src="libs/animate/animate-css.js"></script>
-	<script src="js/common.js"></script>
+  <!-- portfolio section  -->
+  <section class="portfolio"></section>
+  <!-- /.portfolio section -->
 
-	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
-	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
-	
+  <!-- contacts section  -->
+  <section class="contacts"></section>
+  <!-- /.contacts section -->
+
+  <!-- footer section -->
+  <footer class="footer"></footer>
+  <!-- /.footer section -->
 </body>
 
 </html>
