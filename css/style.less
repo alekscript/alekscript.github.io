@@ -35,6 +35,11 @@
 @textBold: 'Raleway-Bold', sans-serif;
 @textItal: 'Raleway-LightItalic', sans-serif;
 
+@notebook: ~"(max-width: 1231px)";
+@tablet: ~"(max-width: 991px)";
+@mobile: ~"(max-width: 769px)";
+@phone: ~"(max-width: 576px)";
+
 /* START RESET CSS
 ================= */
 body {
@@ -110,6 +115,7 @@ ul {
 
 .nav {
     display: flex;
+    align-items: center;
 }
 
 .nav-link {
@@ -140,6 +146,30 @@ ul {
 
     &:hover:after {
         width: 100%;
+    }
+}
+
+.nav-btn {
+    display: none;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    color: transparent;
+    background-color: @black;
+    padding: 6px;
+
+    svg {
+        fill: @orange;
+        width: 100%;
+        height: auto;
+        transition: fill .2s linear;
+    }
+
+    &:hover,
+    &.active {
+        svg {
+            fill: @gray-lite;
+        }
     }
 }
 
@@ -211,3 +241,19 @@ ul {
     text-transform: uppercase;
     border: 1px solid @gray;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* START MEDIA QUARIES!!!
+================= */
+
+@import "media";
