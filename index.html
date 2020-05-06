@@ -10,6 +10,8 @@
     верстальщик, заказать верстку, верстка на заказ, верстка из PSD, верстка по PSD">
   <meta name="author" content="Александо Пятопал">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML верстальщик - верстка сайтов. Заказать верстку.</title>
 </head>
@@ -29,12 +31,15 @@
         </nav>
 
         <button class="nav-btn">
-          <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" >
-            <path d="m464.883 64.267h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z" />
-            <path d="m464.883 208.867h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z" />
-            <path d="m464.883 353.467h-417.766c-25.98 0-47.117 21.137-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.012-21.137-47.149-47.117-47.149z" />
+          <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="m464.883 64.267h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z" />
+            <path
+              d="m464.883 208.867h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z" />
+            <path
+              d="m464.883 353.467h-417.766c-25.98 0-47.117 21.137-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.012-21.137-47.149-47.117-47.149z" />
           </svg>
-          
+
         </button>
       </div>
     </div>
@@ -45,17 +50,73 @@
   <section class="intro">
     <div class="container">
       <div class="intro__inner">
-          <h1 class="intro-title">Верстка сайтов</h1>
-          <h3 class="intro-subtitle"><span>HTML Верстальщик</span> - Александр Пятопал</h3>
+        <h1 class="intro-title">Верстка сайтов</h1>
+        <h3 class="intro-subtitle"><span>HTML Верстальщик</span> - Александр Пятопал</h3>
 
-          <button type="button" class="btn">Заказать верстку</button>
+        <button type="button" class="btn">Заказать верстку</button>
       </div>
     </div>
   </section>
   <!-- /.intro section -->
 
   <!-- about section  -->
-  <section class="about"></section>
+  <section class="about">
+    <div class="container">
+      <div class="section__header">
+        <h3 class="section-title">Что я использую в своей работе</h3>
+        <p class="section-text">
+          Вы отдаете свой дизайн в надежные руки, способные сверстать качественный html шаблон,
+          отвечающий всем требованиям современной верстки.
+        </p>
+      </div>
+
+      <div class="about__inner">
+        <div class="about-item about-item--orange">
+          <img src="images/html.svg" alt="html" class="about-img">
+          <h4 class="about-title">html</h4>
+          <div class="about-text">
+            <p>Верстка сайта используя язык разметки HTML5, а также препроцессоры Less или Sass </p>
+          </div>
+        </div>
+        <div class="about-item">
+          <img src="images/css.svg" alt="css" class="about-img">
+          <h4 class="about-title">ccs</h4>
+          <div class="about-text">
+            <p>Стилизация и анимация сайта используя стили CSS3</p>
+          </div>
+        </div>
+        <div class="about-item about-item--orange">
+          <img src="images/mobile.svg" alt="mobile" class="about-img">
+          <h4 class="about-title">Adaptive</h4>
+          <div class="about-text">
+            <p>Адаптивная верстка с использованием фреймворка bootstrap или на чистом html
+            </p>
+          </div>
+        </div>
+        <div class="about-item">
+          <img src="images/valide.svg" alt="valide" class="about-img">
+          <h4 class="about-title">Валидность</h4>
+          <div class="about-text">
+            <p>Соблюдение стандартов W3C, семантическая разметка кода</p>
+          </div>
+        </div>
+        <div class="about-item about-item--orange">
+          <img src="images/js.svg" alt="js" class="about-img">
+          <h4 class="about-title">javascript</h4>
+          <div class="about-text">
+            <p>Встраивание готовых решений JS на уровне подключения и доработки</p>
+          </div>
+        </div>
+        <div class="about-item">
+          <img src="images/web.svg" alt="web" class="about-img">
+          <h4 class="about-title">Тест</h4>
+          <div class="about-text">
+            <p>Тестирование работоспособности сайта на разных браузерах</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- /.about section -->
 
   <!-- portfolio section  -->
