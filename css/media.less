@@ -36,21 +36,21 @@
     body {
         overflow-x: hidden;
     }
-    .header__inner {
-        padding-bottom: 0;
-    }
+ 
+
 
     .nav {
-        margin: 0 auto;
         display : none;
+        height: 215px;
+        margin: 0 auto;
         width           : 200px;
         display         : block;
         flex-direction  : column;
         position        : absolute;
-        right           : 0;
+        right           : -15px;
         top             : 100%;
-        z-index         : 5;
-        background-color: #333;
+        z-index         : 1;
+        background-color: rgba(@black, 0.9);
         transform       : translateX(250px);
         transition      : all .2s linear;
 
@@ -68,8 +68,7 @@
         text-align     : center;
         text-decoration: underline;
         margin-left: 0;
-        &:after,
-        &.active {
+        &:after {
             display: none;
         }
 
