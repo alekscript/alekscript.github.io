@@ -176,7 +176,7 @@ ul {
     color           : transparent;
     background-color: @black;
     padding         : 6px;
-
+    border-radius: 3px;
     svg {
         fill      : @orange;
         width     : 100%;
@@ -189,6 +189,7 @@ ul {
         svg {
             fill: @gray-lite;
         }
+        text-decoration: none;
     }
 }
 
@@ -259,7 +260,7 @@ ul {
     text-transform  : uppercase;
     border          : 1px solid @gray;
     transition      : background .2s linear;
-
+    border-radius: 3px;
     &:hover {
         background-color: #d55327;
 
@@ -432,7 +433,116 @@ ul {
     font-family: @textBold;
 }
 
+/* START contancts section
+================= */
+.contacts {
+    padding: 80px 0;
+    background-color: @white;
+}
 
+.contacts__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    color: @black;
+}
+
+.contacts_list {
+    width: 40%;
+}
+
+.contacts__form {
+    width: 60%;
+}
+
+.form {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: @gray-lite;
+    max-height: 456px;
+    text-align: left;
+    box-shadow      : 0px 5px 10px #b9b9b999;
+    
+}
+
+.form-input {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border: 2px solid @gray;
+    outline: 0;
+    -moz-appearance: none;
+    border-radius: 3px;
+    transition: border-color .2s linear;
+    color: @gray;
+    ::placeholder {
+        color: @gray-lite;
+        font-size: 14px;
+      }
+    &:focus {
+        border-color: @orange;
+        
+    }
+    &:required {
+        border: 0;
+    }
+}
+
+.form-text {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 15px;
+    min-height: 120px;
+    resize: none;
+    border: 2px solid @gray;
+    outline: 0;
+    -moz-appearance: none;
+    border-radius: 3px;
+    transition: border-color .3s linear;
+    color: @gray;
+    &:focus { 
+        border-color: @orange;
+    }
+    ::placeholder {
+        color: @gray-lite;
+        font-size: 14px;
+      }
+    margin-bottom: 20px;
+}
+
+.contact-header {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: @textBold;
+    text-transform: uppercase;
+}
+
+.contact-item {
+    position: relative;
+    padding-left: 40px;
+
+}
+
+.contact-head {
+    font-weight: 400;
+    font-family: @textReg;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.contact-text {
+    font-family: @textLight;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 16px;
+}
 /* START FOOTER 
 ================= */
 .footer {
@@ -467,6 +577,10 @@ ul {
     font-family   : @textBold;
     font-size     : 18px;
     padding-bottom: 15px;
+
+    span {
+        color: @orange
+    }
 }
 
 .footer-text {
