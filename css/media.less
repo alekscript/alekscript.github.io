@@ -29,6 +29,13 @@
     .portfolio_item {
         width: 50%;
     }
+    .contacts_list {
+        width: 50%;
+    }
+    
+    .contacts__form {
+        width: 50%;
+    }
 }
 
 // 769
@@ -36,9 +43,11 @@
     body {
         overflow-x: hidden;
     }
- 
+    
 
-
+    .header__inner {
+        padding: 5px 0;
+    }
     .nav {
         display : none;
         height: 215px;
@@ -81,7 +90,10 @@
     .nav-btn {
         display: inline-block;
     }
-
+    .btn {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
     .about {
         padding-bottom: 50px;
     }
@@ -111,11 +123,37 @@
     .portfolio_item {
         width: 100%;
     }
+    .contacts_list {
+        width: 50%;
+        margin: 0 auto;
+        order: 2;
+    }
+    
+    .contacts__form {
+        width: 100%;
+        order: 1;
+        padding-bottom: 50px;
+    }
+    
 }
 
 // 576
 @media @phone {
-
+    .intro-title {
+        font-size: 40px;
+    }
+    .intro-subtitle {
+        font-size: 18px;
+    }
+    .btn {
+        padding: 12px 15px;
+    }
+    .contacts_list {
+    width: 100%;
+    }
+    .logo {
+        font-size: 20px;
+    }
     .footer-nav,
     .contact {
         width: 100%;
