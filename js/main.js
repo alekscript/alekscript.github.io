@@ -52,4 +52,44 @@ $(function () {
           return false;
       });
 
+  /* Modal
+    ================= */
+    let modalWindow = $("[data-modal]");
+    let modalClose = $("[data-close]");
+
+    modalWindow.on("click", function (event) {
+        event.preventDefault();
+
+        let $this = $(this);
+        let modalId = $this.data('modal');
+
+        $(modalId).addClass('show');
+        $("body").addClass('no-scroll');
+
+    });
+
+    modalClose.on("click", function (event) {
+        event.preventDefault();
+
+        let $this = $(this);
+
+        let modalParent = $this.parents('.modal');
+        setTimeout(function () {
+            modalParent.removeClass('show');
+            $("body").removeClass('no-scroll');
+        }, 200);
+    });
+    $(".modal").on("click", function (event) {
+        let $this = $(this);
+
+        setTimeout(function () {
+            $this.removeClass('show');
+            $("body").removeClass('no-scroll');
+        }, 200);
+    });
+
+
+    $('.wrap').on("click", function (event) {
+        event.stopPropagation();
+    });
 });

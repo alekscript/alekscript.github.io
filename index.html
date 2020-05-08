@@ -51,15 +51,16 @@
         <h1 class="intro-title">Верстка сайтов</h1>
         <h3 class="intro-subtitle"><span>HTML Верстальщик</span> - Александр Пятопал</h3>
 
-        <a href="#modal" class="btn">Заказать верстку</a>
+        <a href="#" class="btn" data-modal="#modal">Заказать верстку</a>
       </div>
     </div>
       <!-- modal section -->
 <div class="modal" id="modal">
 
   <div class="wrap">
-    <button class="close">X</button>
+   
     <div class="contacts__form">
+      <button class="close" data-close>X</button>
       <form class="form" action="https://formspree.io/xwkrkglk"
       method="POST">
          <input name="name" type="text" class="form-input" placeholder="Введите имя" required>
