@@ -34,14 +34,15 @@
 @orange   : #fc6d3d;
 
 @textLight: 'Raleway-Light', sans-serif;
-@textReg  : 'Raleway-Regular', sans-serif;
+@textReg  : 'Raleway-Regular',
+sans-serif;
 @textBold: 'Raleway-Bold', sans-serif;
 
 
 @notebook: ~"(max-width: 1231px)";
-@tablet  : ~"(max-width: 991px)";
-@mobile  : ~"(max-width: 769px)";
-@phone   : ~"(max-width: 576px)";
+@tablet  :~"(max-width: 991px)";
+@mobile  :~"(max-width: 769px)";
+@phone   :~"(max-width: 576px)";
 
 /* START RESET CSS
 ================= */
@@ -97,10 +98,10 @@ ul {
     width   : 100%;
 
     &.fixed {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
+        position        : fixed;
+        top             : 0;
+        right           : 0;
+        left            : 0;
         background-color: rgba(@black, 0.9);
 
     }
@@ -111,7 +112,7 @@ ul {
     justify-content: space-between;
     align-items    : center;
     padding        : 15px 0;
-    position: relative;
+    position       : relative;
 }
 
 .logo {
@@ -176,7 +177,8 @@ ul {
     color           : transparent;
     background-color: @black;
     padding         : 6px;
-    border-radius: 3px;
+    border-radius   : 3px;
+
     svg {
         fill      : @orange;
         width     : 100%;
@@ -189,6 +191,7 @@ ul {
         svg {
             fill: @gray-lite;
         }
+
         text-decoration: none;
     }
 }
@@ -201,6 +204,7 @@ ul {
     background-size: cover;
     min-height     : 768px;
     height         : 100vh;
+    overflow       : hidden;
     position       : relative;
 
     &:before {
@@ -221,6 +225,7 @@ ul {
     justify-content: center;
     align-items    : center;
     max-width      : 700px;
+    width: 100%;
     margin         : 0 auto;
     position       : absolute;
     top            : 50%;
@@ -260,7 +265,8 @@ ul {
     text-transform  : uppercase;
     border          : 1px solid @gray;
     transition      : background .2s linear;
-    border-radius: 3px;
+    border-radius   : 3px;
+
     &:hover {
         background-color: #d55327;
 
@@ -280,9 +286,9 @@ ul {
 }
 
 .section__header {
-    text-align: center;
-    max-width : 800px;
-    margin    : 0 auto;
+    text-align   : center;
+    max-width    : 800px;
+    margin       : 0 auto;
     margin-bottom: 50px;
 }
 
@@ -369,66 +375,67 @@ ul {
 ================= */
 
 .portfolio {
-    padding: 80px 0;
+    padding         : 80px 0;
     background-color: @gray-lite;
 }
 
 .portfolio__list {
-    display: flex;
-    flex-wrap: wrap;
+    display        : flex;
+    flex-wrap      : wrap;
     justify-content: space-between;
-    margin: 0 -15px;
+    margin         : 0 -15px;
 }
 
 .portfolio_item {
-    width: 32%;
-    max-width: 400px;
+    width        : 32%;
+    max-width    : 400px;
     margin-bottom: 30px;
-    color: @white;
-    padding: 0 15px;
+    color        : @white;
+    padding      : 0 15px;
 }
 
 .portfolio-img {
-    display: block;
+    display  : block;
     max-width: 100%;
-    height: auto;
+    height   : auto;
 }
 
 .portfolio-content {
     background-color: @gray;
-    padding: 10px 15px;
+    padding         : 10px 15px;
 }
 
 .portfolio-cat {
-    font-size: 14px;
+    font-size     : 14px;
     text-transform: uppercase;
-    font-weight: 700;
-    font-family: @textBold;
-    line-height: 1.4;
+    font-weight   : 700;
+    font-family   : @textBold;
+    line-height   : 1.4;
 }
 
 .cat {
-    font-weight: 300;
-    font-family: @textLight;
+    font-weight   : 300;
+    font-family   : @textLight;
     text-transform: capitalize;
 }
 
 .portfolio-name {
-    display: flex;
+    display        : flex;
     justify-content: space-between;
-    align-items: center;
+    align-items    : center;
 
 }
+
 .portfolio-title {
-    font-size: 16px;
-    font-weight: 700;
-    font-family: @textBold;
-    line-height: 1.6;
+    font-size    : 16px;
+    font-weight  : 700;
+    font-family  : @textBold;
+    line-height  : 1.6;
     padding-right: 10px;
 }
 
 .portfolio-year {
-    font-size: 16px;
+    font-size  : 16px;
     font-weight: 700;
     font-family: @textBold;
 }
@@ -436,13 +443,13 @@ ul {
 /* START contancts section
 ================= */
 .contacts {
-    padding: 80px 0;
+    padding         : 80px 0;
     background-color: @white;
 }
 
 .contacts__inner {
-    display: flex;
-    flex-wrap: wrap;
+    display        : flex;
+    flex-wrap      : wrap;
     justify-content: space-between;
 
     color: @black;
@@ -457,101 +464,107 @@ ul {
 }
 
 .form {
-    width: 100%;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width           : 100%;
+    padding         : 30px;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
     background-color: @gray-lite;
-    max-height: 456px;
-    text-align: left;
+    max-height      : 456px;
+    text-align      : left;
     box-shadow      : 0px 5px 10px #b9b9b999;
-    
+
 }
 
 .form-input {
-    width: 100%;
-    height: 60px;
-    font-size: 16px;
-    padding: 10px 15px;
-    margin-bottom: 20px;
-    border: 2px solid @gray;
-    outline: 0;
+    width          : 100%;
+    height         : 60px;
+    font-size      : 16px;
+    padding        : 10px 15px;
+    margin-bottom  : 20px;
+    border         : 2px solid @gray;
+    outline        : 0;
     -moz-appearance: none;
-    border-radius: 3px;
-    transition: border-color .2s linear;
-    color: @gray;
+    border-radius  : 3px;
+    transition     : border-color .2s linear;
+    color          : @gray;
+
     ::placeholder {
-        color: @gray-lite;
+        color    : @gray-lite;
         font-size: 14px;
-      }
+    }
+
     &:focus {
         border-color: @orange;
-        
+
     }
 
 }
 
 .form-text {
-    width: 100%;
-    font-size: 16px;
-    padding: 10px 15px;
-    min-height: 120px;
-    resize: none;
-    border: 2px solid @gray;
-    outline: 0;
+    width          : 100%;
+    font-size      : 16px;
+    padding        : 10px 15px;
+    min-height     : 120px;
+    resize         : none;
+    border         : 2px solid @gray;
+    outline        : 0;
     -moz-appearance: none;
-    border-radius: 3px;
-    transition: border-color .3s linear;
-    color: @gray;
-    &:focus { 
+    border-radius  : 3px;
+    transition     : border-color .3s linear;
+    color          : @gray;
+
+    &:focus {
         border-color: @orange;
     }
+
     ::placeholder {
-        color: @gray-lite;
+        color    : @gray-lite;
         font-size: 14px;
-      }
+    }
+
     margin-bottom: 20px;
 }
 
 .contact-header {
-    font-size: 20px;
-    font-weight: 700;
-    font-family: @textBold;
+    font-size     : 20px;
+    font-weight   : 700;
+    font-family   : @textBold;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom : 20px;
 }
 
 .contact-item {
-    position: relative;
-    padding-left: 80px;
+    position     : relative;
+    padding-left : 80px;
     margin-bottom: 20px;
 }
 
 .contact-head {
-    font-weight: 400;
-    font-family: @textReg;
+    font-weight   : 400;
+    font-family   : @textReg;
     text-transform: uppercase;
-    font-size: 18px;
-    line-height: 1.4;
+    font-size     : 18px;
+    line-height   : 1.4;
 }
 
 .contact-img {
-    display: block;
+    display : block;
     position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    height: 50px;
+    z-index : 1;
+    left    : 0;
+    top     : 0;
+    height  : 50px;
 }
 
 .contact-text {
     font-family: @textLight;
     font-weight: 300;
     line-height: 1.5;
-    font-size: 18px;
-    color: @black;
+    font-size  : 18px;
+    color      : @black;
 }
+
 /* START FOOTER 
 ================= */
 .footer {
@@ -568,19 +581,22 @@ ul {
 }
 
 .footer-item {
-    width: 50%;
+    width        : 50%;
     padding-right: 30px;
 
 }
+
 .footer_cont {
-    display: flex;
+    display        : flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap      : wrap;
 }
+
 .footer-nav,
 .contact {
     width: 50%;
 }
+
 .footer-title {
     font-weight   : 700;
     font-family   : @textBold;
@@ -594,17 +610,18 @@ ul {
 
 .footer-text {
     font-size     : 14px;
-    line-height: 1.4;
+    line-height   : 1.4;
     font-weight   : 400;
     padding-bottom: 15px;
     font-weight   : 300;
     font-family   : @textLight;
-    max-width: 500px;
+    max-width     : 500px;
 }
 
 .nav-bottom li {
-    position: relative;
+    position      : relative;
     padding-bottom: 5px;
+
     &:before {
         content : "-";
         position: relative;
@@ -613,8 +630,9 @@ ul {
     }
 
     a {
-        color: @white;
+        color     : @white;
         transition: color .2s linear;
+
         &:hover {
             color: @orange;
         }
@@ -626,8 +644,9 @@ ul {
         padding-bottom: 5px;
 
         a {
-            color: @white;
+            color     : @white;
             transition: color .2s linear;
+
             &:hover {
                 color: @orange;
             }
@@ -644,7 +663,7 @@ ul {
     color           : @gray-lite;
     font-size       : 14px;
     font-weight     : 400;
-    line-height: 1.4;
+    line-height     : 1.4;
     text-align      : center;
 }
 
