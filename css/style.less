@@ -544,6 +544,12 @@ ul {
 
     }
 
+    &--file {
+        width: 100%;
+        background-color: @white;
+        overflow: hidden;
+    }
+
 }
 
 .form-text {
@@ -686,8 +692,10 @@ ul {
 
 .bottom-contact {
     li {
+        position: relative;
         padding-bottom: 5px;
-
+        padding-left: 30px;
+        vertical-align: top;
         a {
             color     : @white;
             transition: color .2s linear;
@@ -698,7 +706,14 @@ ul {
         }
     }
 }
-
+.bottom-contact-img {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+}
 /* START FOOTER COPY
 ================= */
 .copy {
