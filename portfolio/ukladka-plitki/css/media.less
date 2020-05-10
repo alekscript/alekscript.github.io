@@ -1,0 +1,346 @@
+// main: main.less
+
+@media @tablet {
+    .header {
+        background-color: @black;
+    }
+    .header_container {
+        margin: 0 -15px;
+    }
+    .header__inner  {
+        background-color: #fff;
+        margin: 0 15px;
+        width: 100%;
+    }
+    .mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+        width: 100%;
+    }
+
+    .logo {
+        display: none;
+        &.active {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background-color: @white;
+            margin: 0 -15px;
+        }
+    }
+    .nav {
+        display: none;
+        &.active {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            top: 100%;
+            position: absolute;
+            z-index: 1000;
+            width: 100%;
+            background-color: @white;
+            margin: 0 -15px;
+        }
+    }
+
+    .header__inner.active .nav {
+        flex-direction: column;
+    }
+    .nav-link {
+        margin: 0;
+        padding: 10px 0;
+        color: @black;
+
+        &:after {
+            background-color: @black;
+            bottom: 0;
+        }
+    }
+    .nav-phone {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        margin: 0;
+        color: @black;
+    }
+    .intro-title {
+        font-size: 45px;
+    }
+    .intro-subtitle {
+        font-size: 25px;
+    }
+    .discounts {
+        padding-top: 60px;
+        padding-bottom: 75px;
+    }
+    .discounts__inner {
+        padding: 0;
+    }
+    .discounts_left {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .discounts-subtitle {
+        max-width: 600px;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+    .discounts-text {
+        max-width: 700px;
+    }
+    .discounts-right {
+        margin: 0 auto;
+    }
+    .works {
+        padding-top: 60px;
+
+    }
+    .slick-next {
+        right: 60px;
+        bottom: 0;
+    }
+    .slick-prev {
+        left: 60px;
+        bottom: 0;
+    }
+    .order-container {
+        top: 70px;
+    }
+}
+
+@media @mobile {
+    .intro {
+        min-height: 0;
+        text-align: center;
+    }
+    .intro__inner {
+        padding-top: 0;
+        padding-bottom: 20px;
+        max-width: 500px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .btn {
+        height: 50px;
+    }
+    .intro-title {
+        font-size: 30px;
+    }
+    .intro-subtitle {
+        font-size: 22px;
+    }
+
+    .section-title {
+        font-size: 35px;
+    }
+    .services__inner {
+        flex-wrap: wrap;
+    }
+    .services_item {
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
+    .services {
+        padding-bottom: 45px;
+    }
+    .services_item-title {
+        font-size: 18px;
+        text-align: center;
+    }
+    .services-text {
+        font-size: 18px;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .services_description-item {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+
+    }
+    .description-head {
+        margin-bottom: 15px;
+    }
+    .description-text {
+        font-size: 18px;
+        min-height: 0;
+        margin-bottom: 15px;
+    }
+    .warranty {
+        padding-bottom: 60px;
+    }
+    .warranty__inner {
+        padding-top: 15px;
+    }
+    .warranty-item {
+        width: 50%;
+        padding-top: 30px;
+    }
+    .warranty-title {
+        font-size: 22px;
+    }
+    .warranty-text {
+        font-size: 16px;
+    }
+    .materials-text {
+        font-size: 18px;
+    }
+    .materials-photo {
+
+        width: 100%;
+        padding: 0 15px;
+        margin: 0 auto;
+        max-width: 300px;
+        height: 300px;
+        padding-bottom: 30px;
+    
+    }
+    .materials-text p:last-child{
+        margin-bottom: 0;
+    }
+    .instruments {
+        padding: 60px 0;
+    }
+    .instruments-text {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    .instruments-item-title {
+        font-size: 25px;
+    }
+    .instruments-item-text {
+        font-size: 18px;
+    }
+    .discounts {
+        padding: 60px 0;
+    }
+    .works-item {
+        width: 49%;
+    }
+    .reviews {
+        padding: 60px 0;
+    }
+    .reviews-slide {
+        padding: 0 20px;
+    }
+    .reviews__inner {
+       margin-top: 30px;
+    }
+    .reviews-text {
+        text-align: center;
+        font-size: 18px;
+        min-height: 306px;
+    }
+    .slick-prev {
+
+        left: 170px;
+        bottom: -50px;
+    
+    }
+
+    .slick-next {
+
+        right: 170px;
+        bottom: -50px;
+    
+    }
+    .order {
+        min-height: 630px;
+    }
+   
+    .order__inner {
+        padding-top: 0;
+    }
+    .order-text {
+        font-size: 18px;
+        padding-bottom: 30px;
+    }
+    .contacts__inner {
+        justify-content: center;
+    }
+    .contacts {
+        padding: 50px 0;
+    }
+    .contacts-title {
+        padding-top:10px;
+    }
+    .contacts_list,
+    .contacts_photo {
+        width: 100%;
+        max-width: 460px;
+        padding-bottom: 30px;
+        font-size: 18px;
+    }
+    .cont-img {
+
+        margin: 0 auto;
+    }
+}
+
+@media @phone {
+    .slick-next {
+        right: 10px;
+    }
+    .slick-prev {
+        left:10px;
+    }
+    .intro__inner {
+        max-width: 400px;
+    }
+    .intro-title {
+        font-size: 25px;
+    }
+    .intro-subtitle {
+        font-size: 18px;
+    }
+    .intro-text {
+        font-size: 18px;
+    }
+    .warranty-item {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .instruments-item {
+        width: 100%;
+        margin: 15px auto;
+        max-width: 400px;
+    
+    }
+    .discounts-round {
+        width: 290px;
+        height: 290px;
+    }
+    .works-item {
+        width: 100%;
+        height: 200px;
+    }
+    .works-item img {
+        width: 300px;
+    }
+    .reviews-text {
+        min-height: 400px;
+    }
+    .order {
+        min-height: 590px;
+    }
+    .order-container {
+        max-width: 320px;
+    }
+    .form-descr {
+        margin-top: 25px;
+        font-size: 14px;
+        line-height: 1.35;
+    }
+    .order-text {
+        font-size: 16px;
+    }
+    
+}

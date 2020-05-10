@@ -17,29 +17,41 @@
     </head>
     <body>
         <!-- HEADER SECTION -->
-        <header class="header">
+        <header class="header" >
             <div class="container">
-                <div class="header__inner">
-                    <div class="logo">
+             <div class="header_container">
+                <div class="mobile" >
+                    <div class="mobile-logo">Меню</div>
+                    <button type="button" id="#menu_btn"  class="btn-nav">
+                        <img
+                            src="images/burger.svg" alt="burger"
+                            class="burger-img">
+                    </button>
+                </div>
+                <div class="header__inner" id="header">
+                    <div class="logo" id="logo" data-scroll="#intro">
                         <img src="images/logo.png" alt="logo" class="logo-img">
                     </div>
 
-                    <nav class="nav">
-                        <a href="#" class="nav-link">Услуги</a>
-                        <a href="#" class="nav-link">Акции</a>
-                        <a href="#" class="nav-link">Отзывы</a>
-                        <a href="#" class="nav-link">Контакты</a>
-                        <a href="#" class="nav-link">Примеры работ</a>
+                    <nav class="nav"  id="nav">
+                        <a href="#" class="nav-link" data-scroll="#services">Услуги</a>
+                        <a href="#" class="nav-link" data-scroll="#discounts">Акции</a>
+                        <a href="#" class="nav-link" data-scroll="#works">Примеры работ</a>
+                        <a href="#" class="nav-link" data-scroll="#reviews">Отзывы</a>
+                        <a href="#" class="nav-link" data-scroll="#contacts">Контакты</a>
 
                         <div class="nav-phone">+375(29) 658-20-88</div>
                     </nav>
+
                 </div>
+             </div>
+              
             </div>
         </header>
         <!-- /.HEADER SECTION -->
 
         <!-- INTRO SECTION -->
-        <div class="intro">
+        <div class="intro" id="intro">
             <div class="container">
                 <div class="intro__inner">
                     <div class="intro-title">
@@ -55,13 +67,13 @@
                         Выполним работы в 1,5-2 раза быстрее конкурентов
                     </p>
                 </div>
-                <button class="btn">Оставить заявку</button>
+                <button class="btn" id="test">Оставить заявку</button>
             </div>
         </div>
         <!-- /.INTRO SECTION -->
 
         <!-- SERVICES SECTION -->
-        <section class="services">
+        <section class="services" id="services">
             <div class="container">
                 <div class="section__head">
                     <h2 class="section-title">Наши услуги</h2>
@@ -118,7 +130,17 @@
                             инструментом мы берём на себя
                         </div>
 
+                  
+                    
+                        <ul class="description">
+                            <li><span>Оплата: </span> постоплата</li>
+                            <li><span>Гарантия на работы: </span> от 1 года.</li>
+                            <li><span>Гарантия на материалы: </span> нет.</li>
+                            <li><span>Стоимость: </span>от 15 руб./м2.</li>
+                        </ul>
+                    
                     </div>
+
                     <div class="services_description-item">
                         <div class="description-head">
                             2. ПОД КЛЮЧ
@@ -130,20 +152,6 @@
                             разгружаем, укладываем плитку и убираем строительный
                             мусор.
                         </div>
-
-                    </div>
-                </div>
-
-                <div class="services__description">
-                    <div class="services_description-item">
-                        <ul class="description">
-                            <li><span>Оплата: </span> постоплата</li>
-                            <li><span>Гарантия на работы: </span> от 1 года.</li>
-                            <li><span>Гарантия на материалы: </span> нет.</li>
-                            <li><span>Стоимость: </span>от 15 руб./м2.</li>
-                        </ul>
-                    </div>
-                    <div class="services_description-item">
                         <ul class="description">
                             <li><span>Оплата: </span> предоплата за материалы.
                             </li>
@@ -153,6 +161,8 @@
                         </ul>
                     </div>
                 </div>
+
+
             </div>
         </section>
         <!-- /.SERVICES SECTION -->
@@ -300,7 +310,7 @@
         <!-- ./INSTRUMENT SECTION -->
 
         <!-- DISCOUNTS SECTION -->
-        <section class="discounts">
+        <section class="discounts" id="discounts">
             <div class="container">
                 <div class="discounts__inner">
                     <div class="discounts_left">
@@ -335,7 +345,7 @@
         <!-- ./DISCOUNTS SECTION -->
 
         <!-- WORKS SECTION -->
-        <section class="works">
+        <section class="works" id="works">
             <div class="section__head">
                 <h2 class="section-title">Примеры работ</h2>
             </div>
@@ -379,7 +389,7 @@
         <!-- ./WORKS SECTION -->
 
         <!-- REVIEWS SECTION -->
-        <section class="reviews">
+        <section class="reviews" id="reviews">
             <div class="section__head">
                 <h2 class="section-title">Отзывы наших клиентов</h2>
             </div>
@@ -489,7 +499,7 @@
         <!-- ./ORDER SECTION -->
 
         <!-- CONTACTS SECTION -->
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="container">
 
                 <div class="contacts__inner">
