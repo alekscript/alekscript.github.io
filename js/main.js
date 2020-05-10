@@ -14,10 +14,10 @@ $(function () {
        function checkScroll(scrollOffset) {
            if (scrollOffset >= introH) {
                header.addClass("fixed");
-               logo.addClass("dn");
+    
            } else {
                header.removeClass("fixed");
-               logo.removeClass("dn");
+     
            }
        }
        
