@@ -5,6 +5,14 @@
     .intro-title {
         font-size: 60px;
     }
+    .about_me-photo {
+        max-width: 670px;
+    }
+    .about_me-text {
+        font-size: 16px;
+        padding: 30px;
+        max-width: 570px;
+    }
 }
 
 // 991
@@ -36,6 +44,21 @@
     .contacts__form {
         width: 50%;
     }
+    .about_me {
+        padding-bottom: 150px;
+    }
+    .about_me-photo {
+        width: 100%;
+        max-width: 1000px;
+    }
+    .about_me-text {
+        width: 100%;
+        left: 50%;
+        top: 60%;
+        transform: translate3d(-50%,0,0);
+        max-width: 700px;
+
+    }
 }
 
 // 769
@@ -44,13 +67,22 @@
         overflow-x: hidden;
     }
     
-
+    .about_me {
+        padding-bottom: 180px;
+        
+    }
+    .about_me-text {
+        font-size: 15px;
+        max-width: 550px;
+        padding: 20px;
+    }
     .header__inner {
         padding: 5px 0;
     }
     .nav {
         display : none;
-        height: 215px;
+        padding-top: 0;
+        height: 225px;
         margin: 0 auto;
         width           : 200px;
         display         : block;
@@ -72,7 +104,7 @@
 
     .nav-link {
 
-        padding        : 15px;
+        padding        : 12px;
         width          : 200px;
         text-align     : center;
         text-decoration: underline;
@@ -94,8 +126,12 @@
         font-size: 16px;
         padding: 12px 20px;
     }
+    .about_me {
+        padding-top: 50px;
+    }
     .about {
-        padding-bottom: 50px;
+        padding-top: 50px;
+        padding-bottom: 20px;
     }
 
     .about-item {
@@ -119,9 +155,17 @@
     .footer_cont {
         margin-top: 30px;
     }
-
+    .portfolio {
+        padding: 50px 0;
+    }
     .portfolio_item {
         width: 100%;
+    }
+    .contacts {
+        padding: 50px 0;
+    }
+    .contact-img {
+        height: 40px;
     }
     .contacts_list {
         width: 50%;
@@ -144,6 +188,41 @@
 // 576
 @media @phone {
     .intro-title {
+        font-size: 36px;
+    }
+    .intro-subtitle {
+        font-size: 16px;
+    }
+    .section-title {
+        font-size: 28px;
+    }
+    .form-input {
+        font-size: 14px;
+        height: 35px;
+        margin-bottom: 15px;
+        
+    }
+    .footer__inner {
+        padding-top: 15px;
+        padding-bottom: 0;
+    }
+    .footer-item {
+        padding-top: 15px;
+
+    }
+    
+    .about_me {
+        padding-bottom: 230px;
+        min-height: 650px;
+    }
+    .about_me-text {
+        font-size: 14px;
+        max-width: 320px;
+        padding: 15px;
+        font-size: 14px;
+        line-height: 1.2;
+    }
+    .intro-title {
         font-size: 40px;
     }
     .intro-subtitle {
@@ -151,16 +230,36 @@
     }
     .btn {
         padding: 12px 15px;
+        font-size: 15px;
     }
     .contacts_list {
     width: 100%;
+    max-width: 320px;
+    }
+    .contact-head {
+        line-height: 1;
+        font-size: 17px;
+    }
+    .contact-text {
+        font-size: 16px;
     }
     .logo {
         font-size: 20px;
     }
+    .bottom-contact-img {
+        left: 35px;
+    }
+    .footer_cont {
+        justify-content: center;
+    }
     .footer-nav,
     .contact {
         width: 100%;
+        max-width: 320px;
+    }
+
+    .bottom-contact li {
+        padding-left: 0;
     }
 
 }
