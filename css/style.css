@@ -698,7 +698,7 @@
       max-width: 700px;
     }
   }
-  @media (max-width: 767px) {
+  @media (max-width: 769px) {
     body {
       overflow-x: hidden;
     }
