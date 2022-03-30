@@ -107,7 +107,7 @@
   .header__inner {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: first baseline;
     padding: 15px 0;
     position: relative;
   }
