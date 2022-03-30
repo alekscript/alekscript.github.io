@@ -96,6 +96,7 @@
     z-index: 100;
     left: 0;
     width: 100%;
+    padding: 15px 0;
   }
   .header.fixed {
     position: fixed;
@@ -108,7 +109,6 @@
     display: flex;
     justify-content: space-between;
     align-items: first baseline;
-    padding: 15px 0;
     position: relative;
   }
   .logo {
