@@ -9,14 +9,14 @@
   <meta name="author" content="Oleksandr Piatopal">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-config" content="https://alekscript.pp.ua/images/icons/browserconfig.xml">
+  <meta name="msapplication-config" content="https://alekscript.site/images/icons/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
-  <link rel="apple-touch-icon" sizes="180x180" href="https://alekscript.pp.ua/images/icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="https://alekscript.pp.ua/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="https://alekscript.pp.ua/images/icons/favicon-16x16.png">
-  <link rel="manifest" href="https://alekscript.pp.ua/images/icons/site.webmanifest">
-  <link rel="mask-icon" href="https://alekscript.pp.ua/images/icons/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="https://alekscript.pp.ua/images/icons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://alekscript.site/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://alekscript.site/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://alekscript.site/images/icons/favicon-16x16.png">
+  <link rel="manifest" href="https://alekscript.site/images/icons/site.webmanifest">
+  <link rel="mask-icon" href="https://alekscript.site/images/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="https://alekscript.site/images/icons/favicon.ico">
   <link rel="stylesheet" href="./css/style.min.css">
   <title>Oleksandr Piatopal | Front End Developer Portfolio</title>
 </head>
@@ -24,19 +24,21 @@
 <body>
   <!-- header section -->
     <header class="header" id="header">
-  <div class="container">
+
     <div class="header__inner">
       <div class="logo"><span>AlekScript</span> Portfolio</div>
 
-      <nav class="nav" id="nav">
-        <a href="#" class="nav-link" data-scroll="#intro">Main</a>
-        <a href="#" class="nav-link" data-scroll="#about_me">About me</a>
-        <a href="#" class="nav-link" data-scroll="#about-service">Services</a>
-        <a href="#" class="nav-link" data-scroll="#portfolio">Portfolio</a>
-        <a href="#" class="nav-link" data-scroll="#contacts">Contacts</a>
+      <nav class="nav" id="nav" data-nav>
+        <ul class="nav--list">
+          <li class="nav-link"><a href="#intro" class="nav-link">Main</a></li>
+          <li class="nav-link"><a href="#about_me" class="nav-link" >About me</a></li>
+          <li class="nav-link"><a href="#about-service" class="nav-link" >Services</a></li>
+          <li class="nav-link"><a href="#portfolio" class="nav-link" >Portfolio</a></li>
+          <li class="nav-link"><a href="#contacts" class="nav-link" >Contacts</a></li>
+        </ul>
       </nav>
 
-      <button class="nav-btn" id="menu_btn">
+      <button class="nav-btn burger" id="menu_btn" data-burger aria-label="Open" aria-expanded="false">
         <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
           <path d="m464.883 64.267h-417.766c-25.98 0-47.117 21.136-47.117 47.149
                 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0
@@ -54,22 +56,22 @@
       </button>
 
     </div>
-  </div>
+ 
 </header>
   <!-- /.header section -->
 
   <!-- intro section  -->
-    <section class="intro" id="intro">
+    <section class="intro section" id="intro">
   <div class="container">
     <div class="intro__inner">
       <h1 class="intro-title">Html markup</h1>
       <h3 class="intro-subtitle"><span>HTML Coder</span> - Oleksandr Piatopal</h3>
-      <a href="#" class="btn" data-modal="#modal">Make Order</a>
+      <a href="#" class="btn btn-modal" data-target="#modal">Make Order</a>
     </div>
   </div>
 
   <!-- modal section -->
-  <div class="modal" id="modal">
+  <div class="modal" id="modal" data-target="#modal">
     <div class="wrap">
       <div class="contacts__form">
         <button class="close" data-close>X</button>
@@ -89,7 +91,7 @@
   <!-- /.intro section -->
 
   <!-- about_me section  -->
-    <section class="about_me" id="about_me">
+    <section class="about_me section" id="about_me">
   <div class="container">
 
     <div class="section__header">
@@ -115,7 +117,7 @@
   <!-- ./.about_me section  -->
 
   <!-- about section -->
-    <section class="about" id="about-service">
+    <section class="about section" id="about-service">
   <div class="container">
     <div class="section__header">
       <h3 class="section-title">I usually use at work</h3>
@@ -177,7 +179,7 @@
   <!-- /.about section -->
 
   <!-- portfolio section  -->
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio section" id="portfolio">
   <div class="container">
     <div class="section__header">
       <h3 class="section-title">Portfolio</h3>
@@ -296,7 +298,7 @@
   <!-- /.portfolio section -->
 
   <!-- contacts section  -->
-    <section class="contacts" id="contacts">
+    <section class="contacts section" id="contacts">
     <div class="container">
       <div class="section__header">
         <h3 class="section-title">Make an order</h3>
@@ -317,7 +319,7 @@
           <div class="contact-item">
             <img src="images/mail.svg" alt="" class="contact-img">
             <h5 class="contact-head">Email</h5>
-            <p class="contact-text">piatopal.alex@icloud.com</p>
+            <p class="contact-text">piatopal.alex@gmail.com</p>
           </div>
 
         </div>
@@ -359,10 +361,10 @@
               <div class="footer-title">Navigation</div>
               <div class="footer-text">
                 <ul class="nav-bottom">
-                  <li><a href="#" data-scroll="#intro">Main</a></li>
-                  <li><a href="#" data-scroll="#about_me">About me</a></li>
-                  <li><a href="#" data-scroll="#portfolio">Portfolio</a></li>
-                  <li><a href="#" data-scroll="#contacts">Contacts</a></li>
+                  <li><a href="#intro">Main</a></li>
+                  <li><a href="#about_me">About me</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#contacts">Contacts</a></li>
                 </ul>
               </div>
             </div>
@@ -372,15 +374,15 @@
               <div class="footer-text">
                 <ul class="bottom-contact">
                   <li>
-                    <a href="tel:+38939666596">
+                    <a href="tel:+380685960944">
                       <img src="images/phone.svg" alt="phone" class="bottom-contact-img">
                       +380 (68) 596 09 44
                     </a>
                   </li>
                   <li>
-                    <a href="mailto:piatopal.alex@icloud.com">
+                    <a href="mailto:piatopal.alex@gmail.com">
                       <img src="images/mail.svg" alt="email" class="bottom-contact-img">
-                      piatopal.alex@icloud.com
+                      piatopal.alex@gmail.com
                     </a>
                   </li>
                   <li>
@@ -396,7 +398,7 @@
       </div>
     </div>
     <div class="copy">
-      Copyright © Oleksandr Piatopal («AlekScript Portfolio») 2022. All rights reserved.
+      Copyright © Oleksandr Piatopal («AlekScript Portfolio») 2023. All rights reserved.
     </div>
   </footer>
   <!-- /.footer section -->
